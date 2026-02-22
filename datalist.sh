@@ -1,5 +1,5 @@
-SRC="/home/gdgteam1/AI-Video-Detection/backend/models/DeepFake-EfficientNet/ff_extracted_faceforensic"
-DST="/home/gdgteam1/AI-Video-Detection/backend/models/XceptionNet/Deepfake-Detection/data_list/ff"
+SRC="backend/models/DeepFake-EfficientNet/ff_extracted_faceforensic"
+DST="backend/models/XceptionNet/Deepfake-Detection/data_list/ff"
 
 for SPLIT in train val test; do
     INPUT="$SRC/$SPLIT/real"
