@@ -35,7 +35,7 @@ def main():
 			outputs = model(image)
 			_, preds = torch.max(outputs.data, 1)
 			corrects += torch.sum(preds == labels.data).to(torch.float32)
-			print('Iteration Acc {:.4f}'.format(torch.sum(preds == labels.data).to(torch.float32)/batch_size))
+			#print('Iteration Acc {:.4f}'.format(torch.sum(preds == labels.data).to(torch.float32)/batch_size))
 		acc = corrects / test_dataset_size
 		print('Test Acc: {:.4f}'.format(acc))
 
@@ -48,4 +48,4 @@ if __name__ == '__main__':
 	parse.add_argument('--test_list', '-tl', type=str, default='./data_list/Deepfakes_c0_test.txt')
 	parse.add_argument('--model_path', '-mp', type=str, default='./pretrained_model/df_c0_best.pkl')
 	main()
-	print('Hello world!!!')
+	#print('Hello world!!!')

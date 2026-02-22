@@ -121,3 +121,6 @@ result_docs/
 
 # videos
 videos/
+
+# mac
+.DS_Store

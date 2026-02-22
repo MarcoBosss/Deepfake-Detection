@@ -67,8 +67,8 @@ def main():
 			iter_corrects = torch.sum(preds == labels.data).to(torch.float32)
 			train_corrects += iter_corrects
 			iteration += 1
-			if not (iteration % 20):
-				print('iteration {} train loss: {:.4f} Acc: {:.4f}'.format(iteration, iter_loss / batch_size, iter_corrects / batch_size))
+			# if not (iteration % 20):
+			# 	print('iteration {} train loss: {:.4f} Acc: {:.4f}'.format(iteration, iter_loss / batch_size, iter_corrects / batch_size))
 		epoch_loss = train_loss / train_dataset_size
 		epoch_acc = train_corrects / train_dataset_size
 		print('epoch train loss: {:.4f} Acc: {:.4f}'.format(epoch_loss, epoch_acc))
