@@ -102,3 +102,22 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# videos
+.mp4
+
+# datalist
+data_list/
+
+
+# output
+output/
+
+# weights
+pretrained_models/
+
+# result docs
+result_docs/
+
+# videos
+videos/
